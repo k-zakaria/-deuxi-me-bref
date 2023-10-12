@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+
+
 
 /*-------navebar-----*/
 nav{
@@ -12,11 +15,15 @@ nav{
 }
 .logo{
 font-size: 35px;
+font-family: 'Allerta Stencil';
 color: #A18A68;
 text-decoration: none;
 }
+.logo span{
+    color: #686AA1;
+    font-family: 'Allerta Stencil';
+}
 .menu{
-    flex: 1;
     text-align: right;
     
 }
@@ -31,6 +38,12 @@ text-decoration: none;
     color: #000;
 }
 
+
+.prix{
+    border: #fff;
+    font-size: 20px;
+    color: #A18A68;
+}
 /*------home page------*/
 
 .homepage{
@@ -55,17 +68,30 @@ text-decoration: none;
     font-size: 20px;
     text-align: center;
     padding: 5px 32px;
-    
 }
+
+
 .butns a{
     text-decoration: none;
     color: #fff;
+}
+.butns:hover{
+    background-color: #555;
 }
 .Ellipse{
     display: flex;
     position: absolute;
     left: 50%;
-    top: 650px;
+    top: 100%;
+    gap:8px;
+}
+.Ellipse a{
+    margin-top: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 180px;
+    background: #fff;
+    
 }
 
 /*------home page------*/
@@ -88,11 +114,13 @@ text-decoration: none;
     flex-basis: 20%;
     height: 450px;
 }
+
 .Latest img{
     width: 300px;
     height: 300px;
     padding: 20px 0;
 }
+
 .Latest a{
     text-decoration: none;
     color: #000;
@@ -128,11 +156,11 @@ text-decoration: none;
     margin: 30px 60px;
 }
 
-/*------foterre------*/
+/*------footere------*/
 
 .footer{
     display: flex;
-    margin: 64px  96px ;
+    margin: 64px 96px 20px 96px;
     justify-content: space-between;
 }
 .lign1 ul{
@@ -167,10 +195,9 @@ text-decoration: none;
 }
 
 .icons{
-    margin: 64px  96px 10px ;
+    margin: 20px 96px 30px 0px;
     display: flex;
     justify-content: end;
-    margin-top: 10px; 
 }
 .icons a i{
     padding: 10px;
@@ -216,4 +243,149 @@ text-decoration: none;
     border-radius: 4px ;
     text-align: center;
 }
+
+/*--------paniers--------*/
+
+.all{
+    margin: 64px  96px ;
+    font-family: system-ui;
+}
+.paniers{
+    display: flex;
+    justify-content: space-between;
+    font-family: system-ui;
+    
+}
+.paniers img{
+    height: 120px;
+    width: 100px;
+}
+.paniers .achot{
+    display: flex;
+    gap: 15px;
+}
+.paniers h5{
+    font-size: 20px;
+}
+.paniers .type{
+    padding: 10px 0 5px 0;
+    font-size: 15px;
+}
+.paniers .Quantite{
+    margin-top: 28px;
+}
+.paniers .Quantite input{
+    width: 80px;
+    height: 20px;
+    text-align: center;
+}
+.paniers .total{
+    margin-top: 28px;
+}
+.paniers .supprition{
+    margin-top: 46px;
+}
+.SomTotal{
+    margin: 20px 0;
+    padding: 20px 30px;
+    text-align: end;
+    background-color: #EFF0F0;
+}
+.comend{
+    display: flex;
+    justify-content: space-between;
+}
+.comend .btn{
+    
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.comend .btn1{
+    font-size: 20px;
+    color: #fff;
+    background-color: #707070;
+    
+}
+.comend .btn2{
+    font-size: 20px;
+    color: #fff;
+    background-color: #f0c174;
+    
+}
+
+/*-------paiement---------*/
+
+.paiement{
+    margin: 64px  96px ;
+}
+.paiement .titre{
+    font-size: 20px;
+    margin: 40px 0;
+    
+}
+.paiement .email{
+    margin: 10px 0;
+}
+.paiement span{
+    font-size: 16px;
+    
+}
+.paiement .email input{
+    width: 345px;
+    padding: 5px;
+}
+.paiement .cart{
+    margin: 30px 0;
+}
+.paiement .cart a{
+    
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 20px 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.paiement .virment{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+}
+ .paiement .virment input{
+    width: 345px;
+    padding: 5px;
+ }
+ .paiement .virment .Cash {
+    display: flex;
+ }
+ .paiement .virment .Cash input{
+    width: 166px;
+ }
+ .paiement .nomCompte {
+    margin: 10px 0;
+  }
+  .paiement .nomCompte input{
+    width: 345px;
+    padding: 5px;
+  }
+  .paiement .pays{
+    margin: 5px 0 10px 0;
+
+  }
+  .paiement .pays select{
+    padding: 5px ;
+    width: 250px;
+    margin: 5px 0 30px 0;
+  }
+  .paiement .abonner{
+    margin: 50px 0;
+    border-radius: 4px;
+    padding: 10px 140px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f0c174;
+    
+  }
 
